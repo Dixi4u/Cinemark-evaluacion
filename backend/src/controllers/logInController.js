@@ -26,7 +26,7 @@ loginController.login = async (req, res) =>{
 
             if(!userFound){
                 userFound = await clientesModel.findOne({correo})
-                userType = "customer"
+                userType = "client"
             }
         }
         

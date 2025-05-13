@@ -9,6 +9,7 @@ import clientesRoutes from "./src/routes/clientes.js";
 import registerClienteRoute from "./src/routes/registerCliente.js";
 import loginRoute from "./src/routes/login.js";
 import logoutRoute from "./src/routes/logout.js";
+import passwordRecoveryRoutes from "./src/routes/passwordRecovery.js";
 
 
 const app = express();
@@ -23,6 +24,7 @@ app.use("/api/clientes", clientesRoutes);
 app.use("/api/registerCliente", registerClienteRoute);
 app.use("/api/login", loginRoute);
 app.use("/api/logout", logoutRoute);
+app.use("/api/passwordRecovery", passwordRecoveryRoutes)
 
 
 
